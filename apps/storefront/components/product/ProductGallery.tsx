@@ -1,9 +1,8 @@
 import { PlayIcon } from "@heroicons/react/outline";
 import clsx from "clsx";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState } from "react";
 
-import { ImageExpand } from "@/components/product/ImageExpand";
 import { VideoExpand } from "@/components/product/VideoExpand";
 import { getGalleryMedia, getVideoThumbnail } from "@/lib/media";
 import {
@@ -11,6 +10,7 @@ import {
   ProductMediaFragment,
   ProductVariantDetailsFragment,
 } from "@/saleor/api";
+import ImageExpand from "./ImageExpand";
 
 export interface ProductGalleryProps {
   product: ProductDetailsFragment;
