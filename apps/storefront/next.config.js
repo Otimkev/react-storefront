@@ -36,6 +36,7 @@ module.exports = withBundleAnalyzer({
             key: "x-content-type-options",
             value: "nosniff",
           },
+          { key: "Access-Control-Allow-Origin", value: "*" },
           { key: "x-xss-protection", value: "1" },
           { key: "x-frame-options", value: "DENY" },
           {
